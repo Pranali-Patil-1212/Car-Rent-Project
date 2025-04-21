@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1503DB47-8EBA-4B61-86C9-E59AD50478FA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>carrentalsystem</RootNamespace>
+    <AssemblyName>carrentalsystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking.Designer.cs">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="car.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="car.Designer.cs">
+      <DependentUpon>car.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Destination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Destination.Designer.cs">
+      <DependentUpon>Destination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Driver.Designer.cs">
+      <DependentUpon>Driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_Booking.Designer.cs">
+      <DependentUpon>frm_Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_Bookingwise_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_Bookingwise_Payment.Designer.cs">
+      <DependentUpon>frm_Bookingwise_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_Car.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_Car.Designer.cs">
+      <DependentUpon>frm_Car.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_Carwise_Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_Carwise_Booking.Designer.cs">
+      <DependentUpon>frm_Carwise_Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_Customer.Designer.cs">
+      <DependentUpon>frm_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_Customerwise_Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_Customerwise_Booking.Designer.cs">
+      <DependentUpon>frm_Customerwise_Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_Datewise_Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_Datewise_Booking.Designer.cs">
+      <DependentUpon>frm_Datewise_Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_Destination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_Destination.Designer.cs">
+      <DependentUpon>frm_Destination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_Destinationwise_Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_Destinationwise_Booking.Designer.cs">
+      <DependentUpon>frm_Destinationwise_Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_Driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_Driver.Designer.cs">
+      <DependentUpon>frm_Driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_Driverwise_Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_Driverwise_Booking.Designer.cs">
+      <DependentUpon>frm_Driverwise_Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_Payment.Designer.cs">
+      <DependentUpon>frm_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frm_rent_receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frm_rent_receipt.Designer.cs">
+      <DependentUpon>frm_rent_receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Rent_receipt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rent_receipt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rpt_Booking.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Booking.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rpt_Car.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Car.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rpt_Customer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Customer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rpt_Destination.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Destination.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rpt_Driver.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Driver.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rpt_Payment.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Payment.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Booking.resx">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="car.resx">
+      <DependentUpon>car.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Destination.resx">
+      <DependentUpon>Destination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Driver.resx">
+      <DependentUpon>Driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_Booking.resx">
+      <DependentUpon>frm_Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_Bookingwise_Payment.resx">
+      <DependentUpon>frm_Bookingwise_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_Car.resx">
+      <DependentUpon>frm_Car.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_Carwise_Booking.resx">
+      <DependentUpon>frm_Carwise_Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_Customer.resx">
+      <DependentUpon>frm_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_Customerwise_Booking.resx">
+      <DependentUpon>frm_Customerwise_Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_Datewise_Booking.resx">
+      <DependentUpon>frm_Datewise_Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_Destination.resx">
+      <DependentUpon>frm_Destination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_Destinationwise_Booking.resx">
+      <DependentUpon>frm_Destinationwise_Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_Driver.resx">
+      <DependentUpon>frm_Driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_Driverwise_Booking.resx">
+      <DependentUpon>frm_Driverwise_Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_Payment.resx">
+      <DependentUpon>frm_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frm_rent_receipt.resx">
+      <DependentUpon>frm_rent_receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Rent_receipt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rent_receipt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_Booking.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Booking.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_Car.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Car.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_Customer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Customer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_Destination.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Destination.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_Driver.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Driver.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_Payment.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Payment.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
